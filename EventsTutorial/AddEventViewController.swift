@@ -170,7 +170,7 @@ fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [U
 fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
     return input.rawValue
     
-    //testing
+
 }
 
 
