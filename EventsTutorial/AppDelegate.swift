@@ -1,21 +1,43 @@
 //
 //  AppDelegate.swift
-//  EventsTutorial
+//  EventsApp
 //
-//  Created by Kyle Suchar on 3/3/17.
-//  Copyright © 2017 Kyle Suchar. All rights reserved.
+//  Created by Alejandro Carbajal on 9/20/18.
+//  Copyright © 2018 Alejandro Carbajal. All rights reserved.
 //
 
 import UIKit
+import Parse
+import ParseUI
+import Firebase
+
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "6fCUXwMTVUOF1xofYfKJsgPBWpYK1VkXmEH9zDIE"
+            $0.clientKey = "h30pJcLY0ge2lYNewt8Ys7B7qEMJqH5EWxlabyvh"
+            $0.server = "https://parseapi.back4app.com"
+            
+        }
+        
+        Parse.initialize(with: configuration)
+        
+        
+        
+        
         return true
     }
 
