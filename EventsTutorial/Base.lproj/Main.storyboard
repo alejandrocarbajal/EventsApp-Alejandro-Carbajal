@@ -338,7 +338,7 @@
                         <outlet property="signInButton" destination="iX5-bR-r1m" id="cYD-sC-Wos"/>
                         <outlet property="signInLabel" destination="xKv-aK-y1j" id="glI-wP-uAx"/>
                         <outlet property="signInSelector" destination="Wav-bT-xDO" id="fvV-5x-1Mw"/>
-                        <segue destination="mVT-i3-E8D" kind="show" identifier="goToHome" id="g7l-rk-0Ok"/>
+                        <segue destination="Z0L-yp-Pah" kind="show" identifier="goToHome" id="goc-Fg-MIG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClF-xW-OLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -396,16 +396,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're In! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-sH-qSr">
-                                <rect key="frame" x="121.5" y="315.5" width="132" height="36"/>
+                                <rect key="frame" x="121.5" y="316" width="132" height="35"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVf-sl-uCf">
+                                <rect key="frame" x="103" y="526" width="168" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go to upcoming events">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mVT-i3-E8D" kind="show" id="zi5-K1-eaJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerX" secondItem="RB4-Dz-LEl" secondAttribute="centerX" id="i2z-IO-ZDY"/>
-                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerY" secondItem="RB4-Dz-LEl" secondAttribute="centerY" id="kwS-1q-sap"/>
+                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerY" secondItem="RB4-Dz-LEl" secondAttribute="centerY" id="9mJ-b7-6jg"/>
+                            <constraint firstItem="rVf-sl-uCf" firstAttribute="centerX" secondItem="RB4-Dz-LEl" secondAttribute="centerX" id="KsU-Ic-raI"/>
+                            <constraint firstItem="rVf-sl-uCf" firstAttribute="leading" secondItem="RB4-Dz-LEl" secondAttribute="leadingMargin" constant="87" id="T6i-qL-ql4"/>
+                            <constraint firstItem="4kh-sH-qSr" firstAttribute="top" secondItem="Q3L-NX-bgL" secondAttribute="bottom" constant="296" id="hTG-6O-8tc"/>
+                            <constraint firstItem="ecv-Mx-Qon" firstAttribute="top" secondItem="rVf-sl-uCf" secondAttribute="bottom" constant="111" id="iaR-t7-zew"/>
+                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerX" secondItem="RB4-Dz-LEl" secondAttribute="centerX" id="sli-L6-PVJ"/>
                         </constraints>
                     </view>
                 </viewController>
