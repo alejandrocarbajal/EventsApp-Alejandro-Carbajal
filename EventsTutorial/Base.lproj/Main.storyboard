@@ -402,7 +402,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVf-sl-uCf">
-                                <rect key="frame" x="103" y="526" width="168" height="30"/>
+                                <rect key="frame" x="83" y="513" width="208" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Go to upcoming events">
@@ -415,18 +415,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerX" secondItem="RB4-Dz-LEl" secondAttribute="centerX" id="1Wh-Yu-NPN"/>
-                            <constraint firstItem="ecv-Mx-Qon" firstAttribute="top" secondItem="rVf-sl-uCf" secondAttribute="bottom" constant="111" id="3QI-J7-18O"/>
-                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerY" secondItem="RB4-Dz-LEl" secondAttribute="centerY" id="4El-4F-Po0"/>
-                            <constraint firstItem="rVf-sl-uCf" firstAttribute="leading" secondItem="RB4-Dz-LEl" secondAttribute="leadingMargin" constant="87" id="Cbq-be-Ohl"/>
-                            <constraint firstItem="rVf-sl-uCf" firstAttribute="centerX" secondItem="RB4-Dz-LEl" secondAttribute="centerX" id="UzQ-ID-hT4"/>
-                            <constraint firstItem="4kh-sH-qSr" firstAttribute="top" secondItem="Q3L-NX-bgL" secondAttribute="bottom" constant="296" id="p1i-Uk-zSK"/>
+                            <constraint firstItem="4kh-sH-qSr" firstAttribute="top" secondItem="Q3L-NX-bgL" secondAttribute="bottom" constant="296" id="7Vf-hg-haH"/>
+                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerX" secondItem="RB4-Dz-LEl" secondAttribute="centerX" id="FPY-GX-CuG"/>
+                            <constraint firstItem="ecv-Mx-Qon" firstAttribute="top" secondItem="rVf-sl-uCf" secondAttribute="bottom" constant="124" id="GyM-TZ-hoa"/>
+                            <constraint firstItem="4kh-sH-qSr" firstAttribute="centerY" secondItem="RB4-Dz-LEl" secondAttribute="centerY" id="X3p-ph-8Vb"/>
+                            <constraint firstItem="rVf-sl-uCf" firstAttribute="leading" secondItem="RB4-Dz-LEl" secondAttribute="leadingMargin" constant="67" id="kdB-HD-eTd"/>
+                            <constraint firstItem="rVf-sl-uCf" firstAttribute="centerX" secondItem="RB4-Dz-LEl" secondAttribute="centerX" id="xHo-Iw-GhG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCP-L2-8Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3060" y="-571"/>
+            <point key="canvasLocation" x="3060" y="-571.66416791604206"/>
         </scene>
     </scenes>
     <resources>
