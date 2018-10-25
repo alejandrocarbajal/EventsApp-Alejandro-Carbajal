@@ -216,9 +216,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Bld-Dg-Kjd">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="F5R-Qb-Rsw">
                             <connections>
                                 <action selector="reloadTable:" destination="8Nd-Ek-zQV" id="mvm-xQ-FkF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="Mnt-jw-UbH">
+                            <connections>
+                                <action selector="onSignOutTapped:" destination="8Nd-Ek-zQV" id="UtN-eK-n0N"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -228,6 +234,9 @@
                             <integer key="value" value="4"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="bXb-1E-682" kind="show" identifier="signOutSegue" id="AUb-U5-6Gy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bL-pw-VXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

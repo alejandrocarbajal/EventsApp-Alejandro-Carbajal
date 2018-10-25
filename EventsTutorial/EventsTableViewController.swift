@@ -60,6 +60,8 @@ class EventsTableViewController: PFQueryTableViewController {
 
 
     
+    @IBAction func onSignOutTapped(_ sender: Any) {
+    }
     
 
 }
