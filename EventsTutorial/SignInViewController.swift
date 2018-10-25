@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import  Firebase
 
 class SignInViewController: UIViewController {
     
@@ -72,7 +73,8 @@ class SignInViewController: UIViewController {
                 }
             }
                     else {
-        
+                
+                
                          //error, check error and show message
                         
                         Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
@@ -96,4 +98,5 @@ class SignInViewController: UIViewController {
     }
 
 }
+
 
