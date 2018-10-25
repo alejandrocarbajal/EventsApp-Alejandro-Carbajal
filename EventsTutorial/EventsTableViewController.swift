@@ -9,7 +9,6 @@
 import UIKit
 import Parse
 import ParseUI
-import Firebase
 import FirebaseAuth
 
 class EventsTableViewController: PFQueryTableViewController {
