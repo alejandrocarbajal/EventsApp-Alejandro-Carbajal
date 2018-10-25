@@ -9,6 +9,8 @@
 import UIKit
 import Parse
 import ParseUI
+import Firebase
+import FirebaseAuth
 
 class EventsTableViewController: PFQueryTableViewController {
 
@@ -61,6 +63,14 @@ class EventsTableViewController: PFQueryTableViewController {
 
     
     @IBAction func onSignOutTapped(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            performSegue(withIdentifier: "signOutSegue", sender: nil)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
     }
     
 
