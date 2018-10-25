@@ -67,8 +67,8 @@ class EventsTableViewController: PFQueryTableViewController {
         do {
             try firebaseAuth.signOut()
             performSegue(withIdentifier: "signOutSegue", sender: nil)
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
+        } catch {
+            print (error)
         }
         
     }

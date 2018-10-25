@@ -225,6 +225,9 @@
                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="Mnt-jw-UbH">
                             <connections>
                                 <action selector="onSignOutTapped:" destination="8Nd-Ek-zQV" id="UtN-eK-n0N"/>
+                                <segue destination="bXb-1E-682" kind="popoverPresentation" identifier="signOutSegue" popoverAnchorBarButtonItem="Mnt-jw-UbH" id="KEG-gD-DE3">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -234,9 +237,6 @@
                             <integer key="value" value="4"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
-                    <connections>
-                        <segue destination="bXb-1E-682" kind="show" identifier="signOutSegue" id="AUb-U5-6Gy"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bL-pw-VXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
