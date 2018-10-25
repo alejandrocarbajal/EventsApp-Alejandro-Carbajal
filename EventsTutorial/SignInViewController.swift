@@ -54,9 +54,8 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
-        
+
         // TO DO: do some form validation on the email and password
-        
         
         if let email = emailTextField.text, let pass = passwordTextField.text
             {
@@ -73,6 +72,7 @@ class SignInViewController: UIViewController {
                 }
             }
                     else {
+        
                          //error, check error and show message
                         
                         Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
