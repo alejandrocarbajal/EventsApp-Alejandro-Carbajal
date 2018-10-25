@@ -3,7 +3,7 @@
 //  EventsApp
 //
 //  Created by Alejandro Carbajal on 9/26/18.
-//  Copyright © 2018 Kyle Suchar. All rights reserved.
+//  Copyright © 2018 Alejandro Carbajal. All rights reserved.
 //
 
 import UIKit
