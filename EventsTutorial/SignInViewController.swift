@@ -57,6 +57,7 @@ class SignInViewController: UIViewController {
         
         // TO DO: do some form validation on the email and password
         
+        
         if let email = emailTextField.text, let pass = passwordTextField.text
             {
                     //check if it's sign in or register

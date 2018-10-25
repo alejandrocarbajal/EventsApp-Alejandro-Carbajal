@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C1BCD05ABC9F55D601BFEBE /* Pods_EventsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC81355556706C1E33C74F4 /* Pods_EventsApp.framework */; };
+		9124DE7A21825F4500CEDAE7 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9124DE7921825F4500CEDAE7 /* AlertController.swift */; };
 		9127D2B3215BECAF00B163CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127D2B2215BECAF00B163CF /* SignInViewController.swift */; };
 		91986470215BC6A900AA1AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9198646F215BC6A900AA1AEE /* GoogleService-Info.plist */; };
 		B49A31321E6A04AE00258C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A31311E6A04AE00258C11 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 		1DC81355556706C1E33C74F4 /* Pods_EventsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26812A37EE13E40204914CC8 /* Pods-EventsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsAppTests/Pods-EventsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		53A003B2810A33B0DF96B575 /* Pods-EventsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsAppUITests/Pods-EventsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9124DE7921825F4500CEDAE7 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		9127D2B2215BECAF00B163CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9198646F215BC6A900AA1AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACDB476378D5AED881FE5EBA /* Pods-EventsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsAppUITests/Pods-EventsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				B49A31311E6A04AE00258C11 /* AppDelegate.swift */,
 				B49A31351E6A04AE00258C11 /* Main.storyboard */,
 				9127D2B2215BECAF00B163CF /* SignInViewController.swift */,
+				9124DE7921825F4500CEDAE7 /* AlertController.swift */,
 				B49A31381E6A04AE00258C11 /* Assets.xcassets */,
 				B4F9699C1E6A44B300FA7C4C /* AddEventViewController.swift */,
 				B49A315F1E6A04DA00258C11 /* Bolts.framework */,
@@ -300,6 +303,7 @@
 				B4F9699D1E6A44B300FA7C4C /* AddEventViewController.swift in Sources */,
 				B49A317D1E6A0BB800258C11 /* EventCell.swift in Sources */,
 				9127D2B3215BECAF00B163CF /* SignInViewController.swift in Sources */,
+				9124DE7A21825F4500CEDAE7 /* AlertController.swift in Sources */,
 				B49A31321E6A04AE00258C11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
