@@ -135,6 +135,7 @@
                         <outlet property="imageView" destination="Zsh-me-QL4" id="FJ0-5d-6i7"/>
                         <outlet property="locationLabel" destination="2Yn-kF-shw" id="8Bc-dE-JjN"/>
                         <outlet property="nameLabel" destination="RJq-1A-emo" id="e5k-MG-n7M"/>
+                        <segue destination="5xb-Fr-mcK" kind="show" identifier="SuccessSegue" id="IRe-Ou-qRk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wi-Eg-Fxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -434,7 +435,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCP-L2-8Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3327" y="-617"/>
+            <point key="canvasLocation" x="3415" y="-663"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GmN-xp-Xt2">
+            <objects>
+                <viewController id="5xb-Fr-mcK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kAe-VL-bQa"/>
+                        <viewControllerLayoutGuide type="bottom" id="PIw-vh-6D2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zVC-Xp-9Y8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjj-MU-zkf">
+                                <rect key="frame" x="83" y="513" width="208" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go to upcoming events">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mVT-i3-E8D" kind="show" id="nei-we-7P4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This Event has been successfully submitted. It will be reviewed by the Administrator." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-ZO-xEs">
+                                <rect key="frame" x="93" y="174" width="189" height="318"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Sc-ZO-xEs" firstAttribute="centerX" secondItem="Xjj-MU-zkf" secondAttribute="centerX" id="4HI-uF-chQ"/>
+                            <constraint firstItem="3Sc-ZO-xEs" firstAttribute="top" secondItem="kAe-VL-bQa" secondAttribute="bottom" constant="154" id="5uF-xt-a65"/>
+                            <constraint firstItem="Xjj-MU-zkf" firstAttribute="top" secondItem="3Sc-ZO-xEs" secondAttribute="bottom" constant="21" id="XD3-0X-wb3"/>
+                            <constraint firstItem="Xjj-MU-zkf" firstAttribute="centerX" secondItem="zVC-Xp-9Y8" secondAttribute="centerX" id="dmh-n0-h1j"/>
+                            <constraint firstItem="3Sc-ZO-xEs" firstAttribute="leading" secondItem="zVC-Xp-9Y8" secondAttribute="leadingMargin" constant="77" id="f9D-PF-maB"/>
+                            <constraint firstItem="3Sc-ZO-xEs" firstAttribute="centerY" secondItem="zVC-Xp-9Y8" secondAttribute="centerY" id="fjC-lP-GY4"/>
+                            <constraint firstItem="Xjj-MU-zkf" firstAttribute="leading" secondItem="zVC-Xp-9Y8" secondAttribute="leadingMargin" constant="67" id="jmT-1y-lBr"/>
+                            <constraint firstItem="PIw-vh-6D2" firstAttribute="top" secondItem="Xjj-MU-zkf" secondAttribute="bottom" constant="124" id="xP3-cs-3E9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJw-OP-Brq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4314.3999999999996" y="-663.41829085457277"/>
         </scene>
     </scenes>
     <resources>
@@ -443,4 +491,7 @@
         <image name="download" width="225" height="225"/>
         <image name="logoSS" width="310" height="168"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nei-we-7P4"/>
+    </inferredMetricsTieBreakers>
 </document>

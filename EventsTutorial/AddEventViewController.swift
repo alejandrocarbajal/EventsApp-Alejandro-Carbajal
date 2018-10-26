@@ -69,6 +69,7 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
 
             if (success) {
                 print("success")
+                self.performSegue(withIdentifier: "SuccessSegue", sender: self)
 
             }else{
 
