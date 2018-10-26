@@ -78,7 +78,9 @@ class SignInViewController: UIViewController {
                          //error, check error and show message
                         
                         Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
-                            guard (user?.user) != nil else { return }
+                            guard (user?.user) != nil else {
+          
+                                return }
                             
                             //check that user isn't nil
                             if user != nil {
