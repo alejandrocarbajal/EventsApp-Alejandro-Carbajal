@@ -87,6 +87,10 @@ class SignInViewController: UIViewController {
             if isSignIn {
                     //Sign in the user with firebase
                 Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+                    guard error == nil else {
+                        AlertController.showAlert(self, title: "Error", message: error!.localizedDescription)
+                        return
+                    }
                     
                     //check that user isn't nil
                     if user != nil {
