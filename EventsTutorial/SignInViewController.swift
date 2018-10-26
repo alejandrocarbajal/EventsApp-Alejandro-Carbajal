@@ -56,6 +56,7 @@ class SignInViewController: UIViewController {
     @IBAction func signInButtonTapped(_ sender: UIButton) {
 
         // TO DO: do some form validation on the email and password
+
         
         if let email = emailTextField.text, let pass = passwordTextField.text
             {
@@ -82,6 +83,7 @@ class SignInViewController: UIViewController {
                             //check that user isn't nil
                             if user != nil {
                             //user is found, go to home screen
+                                self.performSegue(withIdentifier: "goToHome", sender: self)
             }
                 })
             
