@@ -26,7 +26,7 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-   @objc func handleTextField () {
+   func handleTextField () {
         
     emailTextField.addTarget(self, action: #selector(SignInViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
     passwordTextField.addTarget(self, action: #selector(SignInViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
     @objc func  textFieldDidChange () {
         guard let email = emailTextField.text, !email.isEmpty,
             let password = passwordTextField.text, !password.isEmpty else {
-                signInButton.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+                signInButton.setTitleColor(UIColor.gray, for: UIControl.State.normal)
                 signInButton.isEnabled = false
                 return
         }
