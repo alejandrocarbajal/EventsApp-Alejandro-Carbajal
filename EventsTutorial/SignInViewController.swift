@@ -74,12 +74,15 @@ class SignInViewController: UIViewController {
 
         // TO DO: do some form validation on the email and password
         
-        if let email = emailTextField.text, let pass = passwordTextField.text,
+        guard let email = emailTextField.text, let pass = passwordTextField.text,
             email != "",
             pass != ""
-                
+            else {
+                AlertController.showAlert(self, title: "Missing Info", message: "Please fill out all fields")
+                return
+        }
         
-            {
+        do {
                     //check if it's sign in or register
             if isSignIn {
                     //Sign in the user with firebase
