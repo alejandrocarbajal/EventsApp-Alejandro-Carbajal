@@ -56,9 +56,9 @@ class SignInViewController: UIViewController {
     @IBAction func signInButtonTapped(_ sender: UIButton) {
 
         // TO DO: do some form validation on the email and password
-
         
         if let email = emailTextField.text, let pass = passwordTextField.text
+        
             {
                     //check if it's sign in or register
             if isSignIn {
