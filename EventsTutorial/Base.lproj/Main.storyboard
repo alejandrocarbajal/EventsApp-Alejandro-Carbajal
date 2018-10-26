@@ -136,6 +136,7 @@
                         <outlet property="locationLabel" destination="2Yn-kF-shw" id="8Bc-dE-JjN"/>
                         <outlet property="nameLabel" destination="RJq-1A-emo" id="e5k-MG-n7M"/>
                         <segue destination="5xb-Fr-mcK" kind="show" identifier="SuccessSegue" id="IRe-Ou-qRk"/>
+                        <segue destination="B3q-88-OGf" kind="show" identifier="ErrorSegue" id="Efl-BT-OUT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wi-Eg-Fxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -482,7 +483,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJw-OP-Brq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4314.3999999999996" y="-663.41829085457277"/>
+            <point key="canvasLocation" x="4129" y="-663"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mo5-oF-jMi">
+            <objects>
+                <viewController id="B3q-88-OGf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="poj-ks-lX8"/>
+                        <viewControllerLayoutGuide type="bottom" id="IJt-YQ-aKT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4gn-hk-i4V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Af-nQ-JPn">
+                                <rect key="frame" x="83" y="513" width="208" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go to upcoming events">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mVT-i3-E8D" kind="show" id="ZyB-kC-URH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=":( We have encountered an error while submitting your request." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-OE-olf">
+                                <rect key="frame" x="93" y="174" width="190" height="318"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dlh-OE-olf" firstAttribute="top" secondItem="poj-ks-lX8" secondAttribute="bottom" constant="154" id="2n0-Ku-BmU"/>
+                            <constraint firstItem="dlh-OE-olf" firstAttribute="leading" secondItem="4gn-hk-i4V" secondAttribute="leadingMargin" constant="77" id="3qZ-23-OrD"/>
+                            <constraint firstItem="2Af-nQ-JPn" firstAttribute="centerX" secondItem="4gn-hk-i4V" secondAttribute="centerX" id="Bdy-nT-DIQ"/>
+                            <constraint firstItem="2Af-nQ-JPn" firstAttribute="top" secondItem="dlh-OE-olf" secondAttribute="bottom" constant="21" id="Eab-9Y-vcB"/>
+                            <constraint firstItem="dlh-OE-olf" firstAttribute="centerY" secondItem="4gn-hk-i4V" secondAttribute="centerY" id="OOW-96-pSE"/>
+                            <constraint firstItem="IJt-YQ-aKT" firstAttribute="top" secondItem="2Af-nQ-JPn" secondAttribute="bottom" constant="124" id="RKg-5v-eDb"/>
+                            <constraint firstItem="2Af-nQ-JPn" firstAttribute="leading" secondItem="4gn-hk-i4V" secondAttribute="leadingMargin" constant="67" id="V9l-6H-QGH"/>
+                            <constraint firstItem="dlh-OE-olf" firstAttribute="centerX" secondItem="2Af-nQ-JPn" secondAttribute="centerX" id="paF-Fa-U9b"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unA-mR-Ds5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4900" y="-663"/>
         </scene>
     </scenes>
     <resources>
@@ -492,6 +540,7 @@
         <image name="logoSS" width="310" height="168"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nei-we-7P4"/>
+        <segue reference="Efl-BT-OUT"/>
+        <segue reference="ZyB-kC-URH"/>
     </inferredMetricsTieBreakers>
 </document>

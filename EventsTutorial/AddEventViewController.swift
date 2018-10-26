@@ -74,7 +74,7 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
             }else{
 
                 print("error")
-
+                self.performSegue(withIdentifier: "ErrorSegue", sender: self)
             }
 
             
