@@ -95,7 +95,8 @@ class SignInViewController: UIViewController {
                          //error, check error and show message
                         
                         Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
-                            guard (user?.user) != nil else {
+                            
+                            guard error == nil else {
                                 AlertController.showAlert(self, title: "Error", message: error!.localizedDescription)
                                 return }
                             
