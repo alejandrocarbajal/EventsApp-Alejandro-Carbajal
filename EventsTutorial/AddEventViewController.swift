@@ -28,7 +28,7 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        activity.isHidden = true
         
         datePicker.addTarget(self, action: #selector(datePickerChanged(datePicker:)), for: UIControl.Event.valueChanged)
         
@@ -51,7 +51,18 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBAction func createEvent(_ sender: Any) {
+            if activity.isAnimating == true
+            {
+                activity.isHidden = true
+                activity.stopAnimating()
+        }
+        else
+            {
+                activity.isHidden = false
+                activity.startAnimating()
+        }
         
         let name = PFObject(className: "Events")
         name["location"] = locationLabel.text

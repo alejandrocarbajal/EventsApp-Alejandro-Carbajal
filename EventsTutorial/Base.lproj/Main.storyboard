@@ -93,6 +93,10 @@
                                     <action selector="loadImage:" destination="cmu-TI-9Zs" eventType="touchUpInside" id="0Ie-5A-aCz"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="i84-Qz-vlk">
+                                <rect key="frame" x="171" y="342" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -129,6 +133,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Submit" image="Create New-50" id="j6y-iK-zMC"/>
                     <connections>
+                        <outlet property="activity" destination="i84-Qz-vlk" id="L1A-aV-rs7"/>
                         <outlet property="dateLabel" destination="kmo-C3-UQQ" id="8sT-o3-2SU"/>
                         <outlet property="datePicker" destination="J66-KR-QQz" id="ZC7-Xk-fe5"/>
                         <outlet property="imageButton" destination="tzc-AN-8kf" id="1X2-O5-VaZ"/>
@@ -540,6 +545,7 @@
         <image name="logoSS" width="310" height="168"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="IRe-Ou-qRk"/>
         <segue reference="nei-we-7P4"/>
     </inferredMetricsTieBreakers>
 </document>
