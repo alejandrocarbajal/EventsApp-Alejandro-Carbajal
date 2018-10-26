@@ -26,7 +26,14 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+   @objc func handleTextField () {
+        
+    emailTextField.addTarget(self, action: #selector(SignInViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+    }
     
+    @objc func  textFieldDidChange () {
+        
+    }
 
     /*
     // MARK: - Navigation
