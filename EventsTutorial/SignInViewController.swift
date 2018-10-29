@@ -23,6 +23,10 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        signInButton.layer.cornerRadius = 7
+        signInButton.widthAnchor.constraint(equalToConstant: 80.0).isActive = true
+
 
         // Do any additional setup after loading the view.
     }
