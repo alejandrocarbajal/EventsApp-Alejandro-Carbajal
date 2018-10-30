@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import ParseUI
+import UserNotifications
 
 class AddEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -82,6 +83,16 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
             if (success) {
                 print("success")
                 self.performSegue(withIdentifier: "SuccessSegue", sender: self)
+                let content = UNMutableNotificationContent()
+                content.title = "San Service New Event"
+                content.subtitle = "A new event has been created!"
+                content.badge = 1
+                
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                let request = UNNotificationRequest(identifier: "New Event", content: content, trigger: trigger)
+                
+                UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+                
 
             }else{
 
