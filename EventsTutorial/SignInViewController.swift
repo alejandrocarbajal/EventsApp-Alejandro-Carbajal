@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import UserNotifications
 
 class SignInViewController: UIViewController {
     
@@ -23,6 +24,9 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
+        
         
         signInButton.layer.cornerRadius = 7
         signInButton.widthAnchor.constraint(equalToConstant: 80.0).isActive = true
