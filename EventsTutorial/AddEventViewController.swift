@@ -85,7 +85,7 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
                 self.performSegue(withIdentifier: "SuccessSegue", sender: self)
                 let content = UNMutableNotificationContent()
                 content.title = "San Service New Event"
-                content.subtitle = "A new event has been created!"
+                content.subtitle = "A new event has been added to the app!"
                 content.badge = 1
                 
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
