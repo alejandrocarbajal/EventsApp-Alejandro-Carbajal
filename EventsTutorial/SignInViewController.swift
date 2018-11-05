@@ -20,6 +20,8 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     
     
+    
+    
     var isSignIn:Bool = true
 
     override func viewDidLoad() {

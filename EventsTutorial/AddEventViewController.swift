@@ -23,6 +23,7 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var locationLabel: UITextField!
     @IBOutlet weak var nameLabel: UITextField!
     
+    
 
     let imagePicker = UIImagePickerController()
     
