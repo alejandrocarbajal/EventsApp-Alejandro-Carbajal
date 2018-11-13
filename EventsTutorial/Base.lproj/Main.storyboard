@@ -156,63 +156,62 @@
         <scene sceneID="cDK-Jp-RGb">
             <objects>
                 <tableViewController id="8Nd-Ek-zQV" customClass="EventsTableViewController" customModule="EventsApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="262" sectionHeaderHeight="28" sectionFooterHeight="28" id="yQW-E5-IGN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" sectionHeaderHeight="28" sectionFooterHeight="28" id="yQW-E5-IGN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="262" id="qdG-SG-8fu" customClass="EventCell" customModule="EventsApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="262"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="103" id="qdG-SG-8fu" customClass="EventCell" customModule="EventsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qdG-SG-8fu" id="fnY-KD-j3v">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="261.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-photo" translatesAutoresizingMaskIntoConstraints="NO" id="keP-Hf-DTS" customClass="PFImageView">
-                                            <rect key="frame" x="16" y="35" width="337" height="160"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="160" id="c04-Ma-Xk5"/>
-                                            </constraints>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-photo" translatesAutoresizingMaskIntoConstraints="NO" id="keP-Hf-DTS" customClass="PFImageView">
+                                            <rect key="frame" x="278" y="0.0" width="97" height="102.5"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date &amp; time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge2-Vb-xHr">
-                                            <rect key="frame" x="16" y="206" width="313" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-as-unG">
+                                            <rect key="frame" x="1" y="39" width="313" height="25"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="f4a-gv-iiI"/>
+                                                <constraint firstAttribute="height" constant="25" id="xj9-mE-MRF"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53J-QI-idu">
-                                            <rect key="frame" x="16" y="11" width="343" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <rect key="frame" x="1" y="11" width="343" height="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-as-unG">
-                                            <rect key="frame" x="16" y="235" width="313" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge2-Vb-xHr">
+                                            <rect key="frame" x="1" y="68" width="218" height="24"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="18" id="kIq-e5-9bN"/>
+                                                <constraint firstAttribute="width" constant="218" id="8sy-iM-olO"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Ge2-Vb-xHr" firstAttribute="top" secondItem="keP-Hf-DTS" secondAttribute="bottom" constant="7" id="1EE-vQ-rMh"/>
-                                        <constraint firstItem="53J-QI-idu" firstAttribute="trailing" secondItem="fnY-KD-j3v" secondAttribute="trailingMargin" id="9Db-Dz-fR0"/>
-                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="top" secondItem="53J-QI-idu" secondAttribute="bottom" constant="8" symbolic="YES" id="B2D-zL-LN7"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="keP-Hf-DTS" secondAttribute="trailing" constant="6" id="Dzo-dh-Xtp"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Avc-as-unG" secondAttribute="bottom" constant="2" id="JcZ-Cs-J5X"/>
-                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="leading" secondItem="Ge2-Vb-xHr" secondAttribute="leading" id="fp4-4l-9pY"/>
-                                        <constraint firstItem="53J-QI-idu" firstAttribute="top" secondItem="fnY-KD-j3v" secondAttribute="topMargin" id="fsM-wn-rQr"/>
-                                        <constraint firstItem="Ge2-Vb-xHr" firstAttribute="leading" secondItem="Avc-as-unG" secondAttribute="leading" id="gpY-ku-54X"/>
-                                        <constraint firstItem="53J-QI-idu" firstAttribute="leading" secondItem="keP-Hf-DTS" secondAttribute="leading" id="lpy-6c-wEm"/>
-                                        <constraint firstItem="53J-QI-idu" firstAttribute="leading" secondItem="fnY-KD-j3v" secondAttribute="leadingMargin" id="rfQ-bP-bFR"/>
-                                        <constraint firstItem="Avc-as-unG" firstAttribute="top" secondItem="Ge2-Vb-xHr" secondAttribute="bottom" constant="8" symbolic="YES" id="vz8-WB-Ivt"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Ge2-Vb-xHr" secondAttribute="trailing" constant="30" id="yKC-NA-Fih"/>
-                                        <constraint firstItem="Ge2-Vb-xHr" firstAttribute="trailing" secondItem="Avc-as-unG" secondAttribute="trailing" id="ylt-8d-45T"/>
+                                        <constraint firstAttribute="trailing" secondItem="keP-Hf-DTS" secondAttribute="trailing" id="BE4-J6-q1V"/>
+                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="leading" secondItem="Ge2-Vb-xHr" secondAttribute="trailing" constant="59" id="Ivg-kB-W1g"/>
+                                        <constraint firstItem="53J-QI-idu" firstAttribute="trailing" secondItem="fnY-KD-j3v" secondAttribute="trailingMargin" constant="-15" id="Iw6-Wn-IFM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Avc-as-unG" secondAttribute="trailing" constant="45" id="JJZ-L2-UXc"/>
+                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="top" secondItem="fnY-KD-j3v" secondAttribute="top" id="LNe-uL-C0C"/>
+                                        <constraint firstItem="53J-QI-idu" firstAttribute="leading" secondItem="Avc-as-unG" secondAttribute="leading" id="Luq-Sq-kR5"/>
+                                        <constraint firstItem="Avc-as-unG" firstAttribute="top" secondItem="Ge2-Vb-xHr" secondAttribute="bottom" constant="-53" id="R72-Z9-C70"/>
+                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="centerY" secondItem="Avc-as-unG" secondAttribute="centerY" id="dQ6-d2-n90"/>
+                                        <constraint firstItem="53J-QI-idu" firstAttribute="top" secondItem="fnY-KD-j3v" secondAttribute="topMargin" id="jQg-aC-sOV"/>
+                                        <constraint firstItem="Ge2-Vb-xHr" firstAttribute="top" secondItem="fnY-KD-j3v" secondAttribute="topMargin" constant="57" id="koK-D4-a1j"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ge2-Vb-xHr" secondAttribute="trailing" constant="140" id="lrg-t0-Mjv"/>
+                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="centerY" secondItem="fnY-KD-j3v" secondAttribute="centerY" id="mAY-jX-R5w"/>
+                                        <constraint firstItem="53J-QI-idu" firstAttribute="leading" secondItem="fnY-KD-j3v" secondAttribute="leadingMargin" constant="-15" id="qDd-Zt-Or6"/>
+                                        <constraint firstItem="Avc-as-unG" firstAttribute="top" secondItem="53J-QI-idu" secondAttribute="bottom" constant="4" id="ric-PV-fVa"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="dateLabel" destination="Ge2-Vb-xHr" id="UNj-e3-3El"/>
                                     <outlet property="eventImage" destination="keP-Hf-DTS" id="w4Q-qc-sM4"/>
