@@ -172,9 +172,9 @@
                                             <rect key="frame" x="278" y="0.0" width="97" height="102.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge2-Vb-xHr">
-                                            <rect key="frame" x="16" y="68" width="218" height="24"/>
+                                            <rect key="frame" x="16" y="68" width="162" height="24"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="218" id="E8i-EF-gaH"/>
+                                                <constraint firstAttribute="width" constant="162" id="E8i-EF-gaH"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -203,6 +203,13 @@
                                                 <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="more Info..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fn-Os-iEk">
+                                            <rect key="frame" x="180" y="72" width="51" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Ge2-Vb-xHr" firstAttribute="bottom" secondItem="fnY-KD-j3v" secondAttribute="bottomMargin" id="8c4-Yf-QEA"/>
@@ -214,7 +221,7 @@
                                         <constraint firstItem="53J-QI-idu" firstAttribute="leading" secondItem="Avc-as-unG" secondAttribute="leading" id="Luq-Sq-kR5"/>
                                         <constraint firstItem="keP-Hf-DTS" firstAttribute="leading" secondItem="GR6-db-eh0" secondAttribute="trailing" constant="8" symbolic="YES" id="MWE-E5-h5A"/>
                                         <constraint firstItem="Ge2-Vb-xHr" firstAttribute="leading" secondItem="Avc-as-unG" secondAttribute="leading" id="XSI-Wm-Du3"/>
-                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="leading" secondItem="Ge2-Vb-xHr" secondAttribute="trailing" constant="44" id="Zjz-eO-ANy"/>
+                                        <constraint firstItem="keP-Hf-DTS" firstAttribute="leading" secondItem="Ge2-Vb-xHr" secondAttribute="trailing" constant="100" id="Zjz-eO-ANy"/>
                                         <constraint firstItem="Ge2-Vb-xHr" firstAttribute="top" secondItem="Avc-as-unG" secondAttribute="bottom" constant="8" symbolic="YES" id="eQm-7V-CBf"/>
                                         <constraint firstItem="53J-QI-idu" firstAttribute="top" secondItem="fnY-KD-j3v" secondAttribute="topMargin" id="jQg-aC-sOV"/>
                                         <constraint firstItem="keP-Hf-DTS" firstAttribute="centerY" secondItem="fnY-KD-j3v" secondAttribute="centerY" id="juY-ec-5IO"/>
