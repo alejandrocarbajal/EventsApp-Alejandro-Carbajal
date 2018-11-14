@@ -202,6 +202,9 @@
                                             <state key="normal" title="Button" image="moreinfo">
                                                 <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <segue destination="Ivw-aA-iGG" kind="show" id="VOZ-0t-psP"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="more Info..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fn-Os-iEk">
                                             <rect key="frame" x="180" y="72" width="51" height="21"/>
@@ -272,6 +275,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bL-pw-VXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4082.4000000000001" y="208.24587706146929"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dNH-Pn-LcE">
+            <objects>
+                <viewController id="Ivw-aA-iGG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cj3-wH-xkh"/>
+                        <viewControllerLayoutGuide type="bottom" id="od3-hd-JmU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9js-Qc-u3e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSy-OY-9aR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4817" y="208"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="oOC-k9-0cr">
@@ -573,6 +594,6 @@
         <image name="moreinfo" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nei-we-7P4"/>
+        <segue reference="ZyB-kC-URH"/>
     </inferredMetricsTieBreakers>
 </document>
