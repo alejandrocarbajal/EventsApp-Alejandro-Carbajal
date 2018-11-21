@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailNameLabel: UILabel!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var detailLocationLabel: UILabel!
     
     var EventC: EventCell?
     

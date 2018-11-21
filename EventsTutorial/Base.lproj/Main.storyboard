@@ -319,6 +319,7 @@
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="9B3-jI-Oop" id="YIe-yX-dYp"/>
                         <outlet property="detailImageView" destination="8HF-os-wy6" id="m57-Qm-w8a"/>
+                        <outlet property="detailLocationLabel" destination="fTM-mR-nEm" id="woZ-Hp-O2H"/>
                         <outlet property="detailNameLabel" destination="Klq-DL-pxs" id="MJj-fa-wFf"/>
                     </connections>
                 </viewController>
