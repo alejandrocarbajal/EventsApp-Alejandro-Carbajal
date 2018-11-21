@@ -62,7 +62,7 @@ class EventsTableViewController: PFQueryTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    performSegue(withIdentifier: "MasterToDetail", sender: EventCell())
+        performSegue(withIdentifier: "MasterToDetail", sender: EventCell())
         
     }
 

@@ -20,4 +20,5 @@ class EventCell: PFTableViewCell{
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+ 
 }

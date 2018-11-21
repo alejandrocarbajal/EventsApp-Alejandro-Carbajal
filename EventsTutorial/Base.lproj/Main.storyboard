@@ -305,7 +305,9 @@
                             <constraint firstItem="8HF-os-wy6" firstAttribute="top" secondItem="Cj3-wH-xkh" secondAttribute="bottom" constant="8" symbolic="YES" id="EBh-H1-xrR"/>
                             <constraint firstItem="8HF-os-wy6" firstAttribute="leading" secondItem="9js-Qc-u3e" secondAttribute="leadingMargin" constant="51" id="H8X-H1-tWc"/>
                             <constraint firstItem="fTM-mR-nEm" firstAttribute="leading" secondItem="9B3-jI-Oop" secondAttribute="leading" id="IIU-x0-0NE"/>
+                            <constraint firstItem="fTM-mR-nEm" firstAttribute="trailing" secondItem="9js-Qc-u3e" secondAttribute="trailingMargin" id="INO-8C-YyT"/>
                             <constraint firstItem="fTM-mR-nEm" firstAttribute="trailing" secondItem="9B3-jI-Oop" secondAttribute="trailing" id="IUG-ck-8Wx"/>
+                            <constraint firstItem="fTM-mR-nEm" firstAttribute="leading" secondItem="9js-Qc-u3e" secondAttribute="leadingMargin" id="Mbx-Rf-fda"/>
                             <constraint firstItem="Klq-DL-pxs" firstAttribute="leading" secondItem="fTM-mR-nEm" secondAttribute="leading" id="Yht-zS-UWm"/>
                             <constraint firstItem="Klq-DL-pxs" firstAttribute="top" secondItem="8HF-os-wy6" secondAttribute="bottom" constant="8" symbolic="YES" id="Zfw-y6-h4f"/>
                             <constraint firstItem="fTM-mR-nEm" firstAttribute="top" secondItem="Klq-DL-pxs" secondAttribute="bottom" constant="10" id="Zpn-3t-VWz"/>
