@@ -14,7 +14,6 @@ import FirebaseAuth
 
 class EventsTableViewController: PFQueryTableViewController {
 
-
     
     override func queryForTable() -> PFQuery<PFObject> {
         let query = PFQuery(className: "Events")
@@ -23,20 +22,26 @@ class EventsTableViewController: PFQueryTableViewController {
         return query
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
         self.title = "Upcoming Events"
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            if segue.identifier == "MasterToDetail" {
+                let destVC = segue.destination as!  DetailViewController
+                
+            }
+        }
+
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, object: PFObject?) -> PFTableViewCell? {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EventCell
@@ -53,10 +58,13 @@ class EventsTableViewController: PFQueryTableViewController {
         cell.eventImage.loadInBackground()
         
         return cell
-        
-        
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: "MasterToDetail", sender: EventCell())
+        
+    }
+
     @IBAction func reloadTable(_ sender: Any) {
         
         self.loadObjects()

@@ -11,6 +11,7 @@
 		9124DE7A21825F4500CEDAE7 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9124DE7921825F4500CEDAE7 /* AlertController.swift */; };
 		912547B9218A4A5000AB9574 /* RSVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912547B8218A4A5000AB9574 /* RSVP.swift */; };
 		9127D2B3215BECAF00B163CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127D2B2215BECAF00B163CF /* SignInViewController.swift */; };
+		917E35F821A5AB40007CE1F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917E35F721A5AB40007CE1F5 /* DetailViewController.swift */; };
 		91986470215BC6A900AA1AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9198646F215BC6A900AA1AEE /* GoogleService-Info.plist */; };
 		B49A31321E6A04AE00258C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A31311E6A04AE00258C11 /* AppDelegate.swift */; };
 		B49A31371E6A04AE00258C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49A31351E6A04AE00258C11 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		9124DE7921825F4500CEDAE7 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		912547B8218A4A5000AB9574 /* RSVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSVP.swift; sourceTree = "<group>"; };
 		9127D2B2215BECAF00B163CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		917E35F721A5AB40007CE1F5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9198646F215BC6A900AA1AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACDB476378D5AED881FE5EBA /* Pods-EventsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsAppUITests/Pods-EventsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2C30558FF797384C2C78B73 /* Pods_EventsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 			children = (
 				B49A31311E6A04AE00258C11 /* AppDelegate.swift */,
 				B49A31351E6A04AE00258C11 /* Main.storyboard */,
+				917E35F721A5AB40007CE1F5 /* DetailViewController.swift */,
 				9127D2B2215BECAF00B163CF /* SignInViewController.swift */,
 				912547B8218A4A5000AB9574 /* RSVP.swift */,
 				9124DE7921825F4500CEDAE7 /* AlertController.swift */,
@@ -309,6 +312,7 @@
 				9124DE7A21825F4500CEDAE7 /* AlertController.swift in Sources */,
 				912547B9218A4A5000AB9574 /* RSVP.swift in Sources */,
 				B49A31321E6A04AE00258C11 /* AppDelegate.swift in Sources */,
+				917E35F821A5AB40007CE1F5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
