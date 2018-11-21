@@ -37,7 +37,7 @@ class EventsTableViewController: PFQueryTableViewController {
             
             if segue.identifier == "MasterToDetail" {
                 let detailVC = segue.destination as!  DetailViewController
-               
+               detailVC.myEventCell = sender as? EventCell 
             }
         }
 

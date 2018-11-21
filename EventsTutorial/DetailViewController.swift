@@ -21,13 +21,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setUI()
     }
     func  setUI () {
         detailNameLabel.text = myEventCell?.nameLabel.text
         detailImageView.image = myEventCell?.eventImage.image
         detailLocationLabel.text = myEventCell?.locationLabel.text
-        
-        // Do any additional setup after loading the view.
     }
     
 }
