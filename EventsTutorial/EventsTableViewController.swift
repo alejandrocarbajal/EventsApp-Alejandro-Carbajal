@@ -36,9 +36,8 @@ class EventsTableViewController: PFQueryTableViewController {
         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
             if segue.identifier == "MasterToDetail" {
-                let destVC = segue.destination as!  DetailViewController
-                destVC.EventC = sender as Any as! EventCell
-                
+                let detailVC = segue.destination as!  DetailViewController
+               
             }
         }
 
