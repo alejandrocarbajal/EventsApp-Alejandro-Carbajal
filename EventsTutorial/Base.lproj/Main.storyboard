@@ -279,7 +279,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="sTc-I8-pYB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
