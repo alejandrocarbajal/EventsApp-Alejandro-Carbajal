@@ -15,10 +15,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailNameLabel: UILabel!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     
+    var EventC: EventCell?
     
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        
         // Do any additional setup after loading the view.
     }
     
