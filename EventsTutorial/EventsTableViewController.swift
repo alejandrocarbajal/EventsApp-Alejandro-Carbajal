@@ -33,14 +33,13 @@ class EventsTableViewController: PFQueryTableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
-        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
             if segue.identifier == "MasterToDetail" {
                 let detailVC = segue.destination as!  DetailViewController
                detailVC.myEventCell = sender as? EventCell 
             }
         }
-
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, object: PFObject?) -> PFTableViewCell? {
@@ -61,6 +60,7 @@ class EventsTableViewController: PFQueryTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at:indexPath)
         performSegue(withIdentifier: "MasterToDetail", sender: EventCell())
         
     }
@@ -69,19 +69,16 @@ class EventsTableViewController: PFQueryTableViewController {
         
         self.loadObjects()
     }
-
-
     
-    @IBAction func onSignOutTapped(_ sender: Any) {
+            @IBAction func onSignOutTapped(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
             performSegue(withIdentifier: "signOutSegue", sender: nil)
-        } catch {
+            } catch {
             print (error)
         }
         
     }
     
-
 }
